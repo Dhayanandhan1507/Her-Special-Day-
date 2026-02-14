@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Poorvi❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BALLOONS -->
+<div class="floating">
+  <span>🎈</span><span>🎈</span><span>💖</span><span>✨</span><span>🎉</span>
+</div>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+  <h1 id="typeText"></h1>
+  <p>
+    May your special day be filled with smiles, joy, and beautiful memories.
+  </p>
+  <p>
+    Wishing you happiness today and always 💖✨
+  </p>
+  <button onclick="goPage('page2')">Start Celebration 🎉</button>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+  <h2>A Small Gift For You 🎁</h2>
+  <div class="gift-box" onclick="openGift()">🎁</div>
+  <img src="cake.png" id="cake">
+  <p>
+    This cake holds love, memories  
+    and every smile you gave me ❤️
+  </p>
+  <button onclick="goPage('page3')">Photo Gallery ➜</button>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+  <h2>Photo Gallery 💌</h2>
+  <div class="photo-grid">
+    <div class="photo" onclick="showLetter(0)"><img src="img1.jpg"></div>
+    <div class="photo" onclick="showLetter(1)"><img src="img2.jpg"></div>
+    <div class="photo" onclick="showLetter(2)"><img src="img3.jpg"></div>
+    <div class="photo" onclick="showLetter(3)"><img src="img4.jpg"></div>
+    <div class="photo" onclick="showLetter(4)"><img src="img5.jpg"></div>
+    <div class="photo" onclick="showLetter(5)"><img src="img6.jpg"></div>
+  </div>
+  <button onclick="goPage('page4')">My Heart ➜</button>
+</section>
+
+<!-- PAGE 4 (VIDEO ONLY ON BUTTON CLICK) -->
+<section id="page4" class="page">
+  <h2>My Favorite person ❤️</h2>
+
+  <p>
+    You are not just part of my life,  
+    you are the reason my life feels complete.
+  </p><br>
+  <p>You are my favorite person,and the reason my heart smiles daily.</p>
+    <br></p>
+    <p>With you beside me, life feels calmer, brighter, and more meaningful every single day.</p>
+    <br>
+    <p>You make ordinary moments special just by being you, and that means everything.</p>
+    <br>
+    <p>Happy Birthday my love 💖</p>
+  
+
+  <!-- VIDEO BUTTON -->
+  <button onclick="showVideo()">🎬 Your Favorite Song</button>
+
+  <!-- VIDEO -->
+  <video id="loveVideo" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- LETTER POPUP -->
+<div id="letter">
+  <div class="letter-box">
+    <p id="letterText"></p>
+    <button onclick="closeLetter()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
